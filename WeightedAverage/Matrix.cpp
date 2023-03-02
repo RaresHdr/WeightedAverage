@@ -37,7 +37,7 @@
 //{
 // for (int i = 0; i < columns; i++)
 // {
-// free(mat[i]);
+// free(mat[i]); //free(mat+i)
 // }
 //
 // free(mat);
@@ -49,7 +49,7 @@
 //void printMatrix(T** mat, int rows, int columns) {
 // for (int i = 0; i < columns; i++) {
 // for (int j = 0; j < rows; j++) {
-// cout << *(*(mat + i) + j) << " ";//<=>mat[i][j]
+// cout << *(*(mat + i) + j) << " ";//<=>mat[i][j] //*(mat[i]+j)
 // }
 // cout << endl;
 // }
